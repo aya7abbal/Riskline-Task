@@ -1,0 +1,35 @@
+.side-navbar {
+
+    @media (max-width:992px) {
+
+        display: none;
+    }
+  background-color: white;
+  height: 100vh;
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 30%;
+
+      justify-self: center;
+    }
+  }
+}
+.menu {
+  h4 {
+    color: var(--logo);
+  }
+  nav a {
+    color: var(--logo) !important;
+    font-weight: 500;
+    font-size:.9em;
+
+    &:hover{
+     background-color: rgb(61, 168, 168); 
+     color: white !important;
+    }
+  }
+}

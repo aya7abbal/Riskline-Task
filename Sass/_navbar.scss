@@ -1,0 +1,59 @@
+// Navbar Color
+.navbar{
+
+   background-color: var(--bg);
+   height: 60px;
+
+
+    .offcanvas-header{
+        height: 15px;
+        background-color: var(--bg) !important;
+    }
+    .offcanvas{
+        width: 50%;
+        background-color: #f1f1f1 !important;
+        @media (min-width:768px) {
+            
+            display: none;
+        }
+    }
+
+    .navbar-light .navbar-brand {
+        color: var(--logo) !important;
+        font-weight: 700;
+    
+    }
+    
+    .navbar-toggler{
+        border:none;
+        @media (min-width:992px) {
+            
+            display: none;
+        }
+    }
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.dropdown{
+    button{
+        background-color: white;
+        border-radius: 50%;
+        color: black;
+        border:none;
+        
+    }
+    .dropdown-item{
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+
+    a:hover{
+        color:teal;
+    }
+}
+}
+ 

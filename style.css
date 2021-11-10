@@ -1,0 +1,149 @@
+.navbar {
+  background-color: var(--bg);
+  height: 60px;
+}
+
+.navbar .offcanvas-header {
+  height: 15px;
+  background-color: var(--bg) !important;
+}
+
+.navbar .offcanvas {
+  width: 50%;
+  background-color: #f1f1f1 !important;
+}
+
+@media (min-width: 768px) {
+  .navbar .offcanvas {
+    display: none;
+  }
+}
+
+.navbar .navbar-light .navbar-brand {
+  color: var(--logo) !important;
+  font-weight: 700;
+}
+
+.navbar .navbar-toggler {
+  border: none;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-toggler {
+    display: none;
+  }
+}
+
+.navbar .logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar .dropdown button {
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  border: none;
+}
+
+.navbar .dropdown .dropdown-item {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.navbar .dropdown a:hover {
+  color: teal;
+}
+
+.side-navbar {
+  background-color: white;
+  height: 100vh;
+}
+
+@media (max-width: 992px) {
+  .side-navbar {
+    display: none;
+  }
+}
+
+.side-navbar .logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side-navbar .logo img {
+  width: 30%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.menu h4 {
+  color: var(--logo);
+}
+
+.menu nav a {
+  color: var(--logo) !important;
+  font-weight: 500;
+  font-size: .9em;
+}
+
+.menu nav a:hover {
+  background-color: #3da8a8;
+  color: white !important;
+}
+
+:root {
+  --logo:#4C6162;
+  --bg:#F1F1F1;
+}
+
+h5 {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--logo);
+}
+
+.navbar-light .navbar-brand {
+  color: var(--logo) !important;
+  font-weight: 700;
+}
+
+.myCardT {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.myCardP {
+  font-size: .7em;
+  -webkit-transform: translateY(-19px);
+          transform: translateY(-19px);
+}
+
+.footerP {
+  color: #b6cac2;
+}
+
+.myP {
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.myR {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+/*# sourceMappingURL=style.css.map */

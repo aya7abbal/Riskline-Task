@@ -1,0 +1,15 @@
+.content {
+    
+  box-shadow: grey 1px 1px;
+  .card {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    .card-body {
+      p {
+        font-size: 8px !important;
+      }
+    }
+  }
+}

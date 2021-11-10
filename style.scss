@@ -1,0 +1,38 @@
+@import './Sass/navbar';
+@import './Sass/side-navbar';
+@import './Sass/vars';
+
+h5{
+    text-align: center;
+    margin-top: 30px;
+    color: var(--logo);
+}
+
+.navbar-light .navbar-brand {
+    color: var(--logo) !important;
+    font-weight: 700;
+
+}
+
+.myCardT{
+font-size: 1.1em;
+font-weight: 600;
+}
+.myCardP{
+    font-size: .7em;
+transform:translateY(-19px) ;
+}
+.footerP{
+    color: rgb(182, 202, 194);
+}
+.myP{
+    font-weight: 300;
+}
+h6{
+    font-size: 1em;
+    font-weight: 700;
+}
+.myR{
+    transform: translateY(10px);
+
+}
