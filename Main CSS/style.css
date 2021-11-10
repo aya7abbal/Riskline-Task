@@ -3,11 +3,6 @@
   height: 60px;
 }
 
-.navbar .offcanvas-header {
-  height: 15px;
-  background-color: var(--bg) !important;
-}
-
 .navbar .offcanvas {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -25,6 +20,11 @@
   .navbar .offcanvas {
     display: none;
   }
+}
+
+.navbar .offcanvas-header {
+  height: 15px;
+  background-color: var(--bg) !important;
 }
 
 .navbar .navbar-light .navbar-brand {
@@ -66,6 +66,11 @@
 
 .navbar .dropdown a:hover {
   color: teal;
+}
+
+.navbar-light .navbar-brand {
+  color: var(--logo) !important;
+  font-weight: 700;
 }
 
 .side-navbar {
@@ -115,24 +120,13 @@
   --bg:#F1F1F1;
 }
 
-h5 {
-  text-align: center;
-  margin-top: 30px;
-  color: var(--logo);
-}
-
-.navbar-light .navbar-brand {
-  color: var(--logo) !important;
-  font-weight: 700;
-}
-
 .myCardT {
   font-size: 1.1em;
   font-weight: 600;
 }
 
 .myCardP {
-  font-size: .7em;
+  font-size: 0.7em;
   -webkit-transform: translateY(-19px);
           transform: translateY(-19px);
 }
@@ -153,5 +147,11 @@ h6 {
 .myR {
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
+}
+
+h5 {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--logo);
 }
 /*# sourceMappingURL=style.css.map */

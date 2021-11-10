@@ -1,941 +1,724 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap Bundle -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
-    />
+  <!-- Bootstrap Bundle -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <!-- My CSS Files -->
-    <link rel="stylesheet" href="./style.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+  <!-- My CSS Files -->
+  <link rel="stylesheet" href="./Main CSS/style.css" />
 
-    <title>Riskline</title>
-  </head>
 
-  <body style="background-color: #f1f1f1">
-    <div class="row m-auto">
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
 
-      <!-- SIDE MENU -- LARGE VIEW -->
-      <div
-        class="col-5 col-lg-2 w-100vh side-navbar h-100vh position-sticky top-0"
-      >
-        <div class="logo row-12 my-4">
-          <img src="./images/logo.png" class="rounded-circle" alt="" />
-        </div>
-        <hr />
-        <div class="menu">
-          <nav class="nav flex-column">
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-gear-wide px-2"></i>Covid-19</a
-            >
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-exclamation-triangle px-2"></i>Email Alerts</a
-            >
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-file-text px-2"></i>Content Updates</a
-            >
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-exclamation-triangle px-2"></i>Local Risk
-              Level</a
-            >
-          </nav>
-        </div>
-        <hr />
-        <div class="menu">
-          <h4 class="px-4">Analyst</h4>
-          <nav class="nav flex-column">
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-exclamation-triangle px-2"></i>Alerts</a
-            >
+  <title>Riskline</title>
+</head>
 
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-chat-left-text px-2"></i>Advisors</a
-            >
+<body style="background-color: #f1f1f1">
+  <div class="row m-auto">
 
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-file-text px-2"></i>Daily Brief</a
-            >
+    <!-- SIDE MENU -- LARGE VIEW -->
+    <div class="col-5 col-lg-2 w-100vh side-navbar h-100vh position-sticky top-0">
 
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-gear px-2"></i>Sp. Reports</a
-            >
 
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-exclamation-triangle px-2"></i>System Updates</a
-            >
+      <!-- LOGO IMAGE -->
+      <div class="logo row-12 my-4">
+        <img src="./images/logo.png" class="rounded-circle" alt="" />
+      </div>
+      <hr />
 
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-exclamation-triangle px-2"></i>Alert Templates</a
-            >
+      <!-- FIRST NAVIGATION -->
+      <div class="menu">
+        <nav class="nav flex-column">
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-gear-wide px-2"></i>Covid-19</a>
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-exclamation-triangle px-2"></i>Email
+            Alerts</a>
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-file-text px-2"></i>Content Updates</a>
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-exclamation-triangle px-2"></i>Local Risk
+            Level</a>
+        </nav>
+      </div>
+      <hr />
 
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-bar-chart px-2"></i>Data</a
-            >
+      <!-- SECOND NAVIGATION -->
+      <div class="menu">
+        <h4 class="px-4">Analyst</h4>
+        <nav class="nav flex-column">
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-exclamation-triangle px-2"></i>Alerts</a>
 
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-clock px-2"></i>Log and Reports</a
-            >
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-chat-left-text px-2"></i>Advisors</a>
 
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-telephone px-2"></i>Support</a
-            >
-          </nav>
-        </div>
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-file-text px-2"></i>Daily Brief</a>
 
-        <hr />
-        <div class="menu last-menu">
-          <nav class="nav flex-column">
-            <a class="nav-link" aria-current="page" href="#"
-              ><i class="bi bi-chevron-left px-2"></i
-            ></a>
-          </nav>
-        </div>
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-gear px-2"></i>Sp. Reports</a>
+
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-exclamation-triangle px-2"></i>System
+            Updates</a>
+
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-exclamation-triangle px-2"></i>Alert
+            Templates</a>
+
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-bar-chart px-2"></i>Data</a>
+
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-clock px-2"></i>Log and Reports</a>
+
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-telephone px-2"></i>Support</a>
+        </nav>
       </div>
 
-      <!-- TOP MENU -->
+      <hr />
 
-      <div class="col-12 col-lg-10">
+      <!-- LAST NAVIGATION -->
+      <div class="menu last-menu">
+        <nav class="nav flex-column">
+          <a class="nav-link" aria-current="page" href="#"><i class="bi bi-chevron-left px-2"></i></a>
+        </nav>
+      </div>
+    </div>
 
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-light sticky-top">
-          <div class="container-fluid">
+    <!--Top Navbar-->
 
-            <!-- Toggler & Header -->
-            <div class="left-nav">
-              <button
-                class="navbar-toggler justify-content-start"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-              >
-                <span class="navbar-toggler-icon"></span>
+    <div class="col-12 col-lg-10">
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-light sticky-top">
+        <div class="container-fluid">
+
+          <!-- Toggler & Header -->
+          <div class="left-nav">
+            <button class="navbar-toggler justify-content-start" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Dashboard</a>
+          </div>
+
+          <!-- Profile Icon -- DROPDOWN MENU -->
+          <div class="right-nav">
+            <div class="dropdown">
+              <button class="btn btn-secondary" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-person-fill fs-5"></i>
               </button>
-              <a class="navbar-brand" href="#">Dashboard</a>
+              <ul class="dropdown-menu dropdown-menu-end" data-bs-display="static" aria-labelledby="dropdownMenu2">
+                <li>
+                  <a class="dropdown-item" type="button"><i class="bi bi-gear px-2"></i>Settings</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" type="button"><i class="bi bi-person-circle px-2"></i> Account</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" type="button"><i class="bi bi-question-circle px-2"></i>Support</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" type="button"><i class="bi bi-box-arrow-right px-2"></i>Log in</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Navigation OFFCANVAS -- SMALL VIEW -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="logo row-12 my-2">
+                <img src="./images/logo.png" class="rounded-circle" alt="" style="width: 35%" />
+              </div>
+              <hr />
+              <div class="menu my-3">
+                <nav class="nav flex-column">
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-gear-wide px-2"></i>Covid-19</a>
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-exclamation-triangle px-2"></i>Email
+                    Alerts</a>
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-file-text px-2"></i>Content
+                    Updates</a>
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-exclamation-triangle px-2"></i>Local
+                    Risk
+                    Level</a>
+                </nav>
+              </div>
+              <hr />
+              <div class="menu my-3">
+                <h4 class="px-4">Analyst</h4>
+                <nav class="nav flex-column">
+                  <a class="nav-link" aria-current="page" href="#"><i
+                      class="bi bi-exclamation-triangle px-2"></i>Alerts</a>
+
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-chat-left-text px-2"></i>Advisors</a>
+
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-file-text px-2"></i>Daily Brief</a>
+
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-gear px-2"></i>Sp. Reports</a>
+
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-exclamation-triangle px-2"></i>System
+                    Updates</a>
+
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-exclamation-triangle px-2"></i>Alert
+                    Templates</a>
+
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-bar-chart px-2"></i>Data</a>
+
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-clock px-2"></i>Log and Reports</a>
+
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-telephone px-2"></i>Support</a>
+                </nav>
+              </div>
+
+              <hr />
+              <div class="menu last-menu">
+                <nav class="nav flex-column">
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-chevron-left px-2"></i></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mid-SECTION BEGINNING-->
+
+      <div class="container-fluid content h-100vh" style="background-color: white">
+        <!-- Content (CARDS) -->
+
+        <div class="row row-cols-1 row-cols-md-5 g-2">
+          <!-- MAIN CARD SSA -->
+
+          <div class="col SSA">
+            <h5>SSA</h5>
+            <div class="card my-4">
+              <img src="https://mtt.org/app/uploads/2019/01/world.png" class="card-img-top" alt="..." />
             </div>
 
-            <!-- Profile Icon -->
-            <div class="right-nav">
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                  id="dropdownMenu2"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="bi bi-person-fill fs-5"></i>
-                </button>
-                <ul
-                  class="dropdown-menu dropdown-menu-end"
-                  data-bs-display="static"
-                  aria-labelledby="dropdownMenu2"
-                >
-                  <li>
-                    <a class="dropdown-item" type="button"
-                      ><i class="bi bi-gear px-2"></i>Settings</a
-                    >
-                  </li>
+            <div class="card my-4">
+              <div class="card-body">
+                <!-- Card Title, country icon, risk -- Wrapper -->
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
+                  </div>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-                  <li>
-                    <a class="dropdown-item" type="button"
-                      ><i class="bi bi-person-circle px-2"></i> Account</a
-                    >
-                  </li>
+                <!-- Carb Body Wrapper -->
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
 
-                  <li>
-                    <a class="dropdown-item" type="button"
-                      ><i class="bi bi-question-circle px-2"></i>Support</a
-                    >
-                  </li>
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions
+                  </p>
 
-                  <li>
-                    <a class="dropdown-item" type="button"
-                      ><i class="bi bi-box-arrow-right px-2"></i>Log in</a
-                    >
-                  </li>
-                </ul>
+                  <!-- Footer Paragraph -->
+                  <h6 class="footerP">Travel Safety</h6>
+                </div>
               </div>
             </div>
 
-            <!-- Navigation OFFCANVAS -->
-            <div
-              class="offcanvas offcanvas-start"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <button
-                  type="button"
-                  class="btn-close text-reset"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
+            <!-- SAME CARD REPEATED ALONG THE PAGE -->
+
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
+                  </div>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
+
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions in
+                    parts of Lusaka on 12-14 November
+                  </p>
+                  <h6 class="footerP">Travel Safety and Disruptions</h6>
+                </div>
               </div>
-              <div class="offcanvas-body">
-                <div class="logo row-12 my-2">
-                  <img
-                    src="./images/logo.png"
-                    class="rounded-circle"
-                    alt=""
-                    style="width: 35%"
-                  />
+            </div>
+
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
+                  </div>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <hr />
-                <div class="menu my-3">
-                  <nav class="nav flex-column">
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-gear-wide px-2"></i>Covid-19</a
-                    >
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-exclamation-triangle px-2"></i>Email
-                      Alerts</a
-                    >
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-file-text px-2"></i>Content Updates</a
-                    >
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-exclamation-triangle px-2"></i>Local Risk
-                      Level</a
-                    >
-                  </nav>
-                </div>
-                <hr />
-                <div class="menu my-3">
-                  <h4 class="px-4">Analyst</h4>
-                  <nav class="nav flex-column">
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-exclamation-triangle px-2"></i>Alerts</a
-                    >
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
 
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-chat-left-text px-2"></i>Advisors</a
-                    >
-
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-file-text px-2"></i>Daily Brief</a
-                    >
-
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-gear px-2"></i>Sp. Reports</a
-                    >
-
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-exclamation-triangle px-2"></i>System
-                      Updates</a
-                    >
-
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-exclamation-triangle px-2"></i>Alert
-                      Templates</a
-                    >
-
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-bar-chart px-2"></i>Data</a
-                    >
-
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-clock px-2"></i>Log and Reports</a
-                    >
-
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-telephone px-2"></i>Support</a
-                    >
-                  </nav>
-                </div>
-
-                <hr />
-                <div class="menu last-menu">
-                  <nav class="nav flex-column">
-                    <a class="nav-link" aria-current="page" href="#"
-                      ><i class="bi bi-chevron-left px-2"></i
-                    ></a>
-                  </nav>
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions
+                  </p>
+                  <h6 class="footerP">Travel Safety</h6>
                 </div>
               </div>
             </div>
           </div>
-        </nav>
 
+          <!-- MAIN CARD MENA -->
 
+          <div class="col MENA">
+            <h5>MENA</h5>
 
+            <div class="card my-4">
+              <img src="https://mtt.org/app/uploads/2019/01/world.png" class="card-img-top" alt="..." />
+            </div>
 
-        <!-- Mid-SECTION START-->
-
-        <div
-          class="container-fluid content h-100vh"
-          style="background-color: white"
-        >
-
-
-          <!-- Content (CARDS) -->
-
-          <div class="row row-cols-1 row-cols-md-5 g-4">
-            <div class="col SSA">
-              <h5>SSA</h5>
-
-
-              <!-- MAIN CARD SSA -->
-              <div class="card my-4">
-                <img
-                  src="https://mtt.org/app/uploads/2019/01/world.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
                   </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
-
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions
-                    </p>
-                    <h6 class="footerP">Travel Safety</h6>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
 
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions in
-                      parts of Lusaka on 12-14 November
-                    </p>
-                    <h6 class="footerP">Travel Safety and Disruptions</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
-
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions
-                    </p>
-                    <h6 class="footerP">Travel Safety</h6>
-                  </div>
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions in
+                    parts of Lusaka on 12-14 November
+                  </p>
+                  <h6 class="footerP">Travel Safety and Disruptions</h6>
                 </div>
               </div>
             </div>
 
-
-                          <!-- MAIN CARD MENA -->
-
-            <div class="col MENA">
-              <h5>MENA</h5>
-
-              <div class="card my-4">
-                <img
-                  src="https://mtt.org/app/uploads/2019/01/world.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
                   </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
-
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions in
-                      parts of Lusaka on 12-14 November
-                    </p>
-                    <h6 class="footerP">Travel Safety and Disruptions</h6>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
 
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
-
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions
-                    </p>
-                    <h6 class="footerP">Travel Safety</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
-
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions in
-                      parts of Lusaka on 12-14 November
-                    </p>
-                    <h6 class="footerP">Travel Safety and Disruptions</h6>
-                  </div>
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions
+                  </p>
+                  <h6 class="footerP">Travel Safety</h6>
                 </div>
               </div>
             </div>
 
-
-
-                          <!-- MAIN CARD EURO -->
-
-            <div class="col EURO">
-              <h5>EURO</h5>
-
-              <div class="card my-4">
-                <img
-                  src="https://mtt.org/app/uploads/2019/01/world.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
                   </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
-
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions
-                    </p>
-                    <h6 class="footerP">Travel Safety</h6>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
 
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
-
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions in
-                      parts of Lusaka on 12-14 November
-                    </p>
-                    <h6 class="footerP">Travel Safety and Disruptions</h6>
-                  </div>
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions in
+                    parts of Lusaka on 12-14 November
+                  </p>
+                  <h6 class="footerP">Travel Safety and Disruptions</h6>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
+          <!-- MAIN CARD EURO -->
+
+          <div class="col EURO">
+            <h5>EURO</h5>
+
+            <div class="card my-4">
+              <img src="https://mtt.org/app/uploads/2019/01/world.png" class="card-img-top" alt="..." />
+            </div>
+
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
+                  </div>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
                     </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
                     </div>
                   </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
+                </div>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
 
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions
-                    </p>
-                    <h6 class="footerP">Travel Safety</h6>
-                  </div>
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions
+                  </p>
+                  <h6 class="footerP">Travel Safety</h6>
                 </div>
               </div>
             </div>
 
-
-
-                          <!-- MAIN CARD APAC -->
-
-            <div class="col APAC">
-              <h5>APAC</h5>
-
-              <div class="card my-4">
-                <img
-                  src="https://mtt.org/app/uploads/2019/01/world.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
                   </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
-
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions in
-                      parts of Lusaka on 12-14 November
-                    </p>
-                    <h6 class="footerP">Travel Safety and Disruptions</h6>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
 
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
-
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions
-                    </p>
-                    <h6 class="footerP">Travel Safety</h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
-
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions in
-                      parts of Lusaka on 12-14 November
-                    </p>
-                    <h6 class="footerP">Travel Safety and Disruptions</h6>
-                  </div>
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions in
+                    parts of Lusaka on 12-14 November
+                  </p>
+                  <h6 class="footerP">Travel Safety and Disruptions</h6>
                 </div>
               </div>
             </div>
 
-
-
-                          <!-- MAIN CARD AMER -->
-
-            <div class="col AMER">
-              <h5>AMER</h5>
-
-              <div class="card my-4">
-                <img
-                  src="https://mtt.org/app/uploads/2019/01/world.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
                   </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
-
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions
-                    </p>
-                    <h6 class="footerP">Travel Safety</h6>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
 
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
-
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions in
-                      parts of Lusaka on 12-14 November
-                    </p>
-                    <h6 class="footerP">Travel Safety and Disruptions</h6>
-                  </div>
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions
+                  </p>
+                  <h6 class="footerP">Travel Safety</h6>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="card my-4">
-                <div class="card-body">
-                  <div class="row myR">
-                    <div class="col-1 col-md-3 p-2">
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png"
-                        class="rounded-circle"
-                        style="width: 30px"
-                        alt=""
-                      />
+          <!-- MAIN CARD APAC -->
+
+          <div class="col APAC">
+            <h5>APAC</h5>
+
+            <div class="card my-4">
+              <img src="https://mtt.org/app/uploads/2019/01/world.png" class="card-img-top" alt="..." />
+            </div>
+
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
+                  </div>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
                     </div>
-                    <div class="col-11 col-md-8">
-                      <div class="row">
-                        <p class="myCardT">Zambia</p>
-                      </div>
-                      <div class="row">
-                        <p class="myCardP col">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
-                            style="width: 15px"
-                            alt=""
-                          />
-                          Moderate Risk
-                        </p>
-                      </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
                     </div>
                   </div>
-                  <div class="CardB">
-                    <h6>6 hours ago</h6>
+                </div>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
 
-                    <p class="card-text myP">
-                      Maintenance work to trigger electricity disruptions
-                    </p>
-                    <h6 class="footerP">Travel Safety</h6>
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions in
+                    parts of Lusaka on 12-14 November
+                  </p>
+                  <h6 class="footerP">Travel Safety and Disruptions</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
                   </div>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
+
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions
+                  </p>
+                  <h6 class="footerP">Travel Safety</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
+                  </div>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
+
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions in
+                    parts of Lusaka on 12-14 November
+                  </p>
+                  <h6 class="footerP">Travel Safety and Disruptions</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MAIN CARD AMER -->
+
+          <div class="col AMER">
+            <h5>AMER</h5>
+
+            <div class="card my-4">
+              <img src="https://mtt.org/app/uploads/2019/01/world.png" class="card-img-top" alt="..." />
+            </div>
+
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
+                  </div>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
+
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions
+                  </p>
+                  <h6 class="footerP">Travel Safety</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
+                  </div>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Eo_circle_orange_number-3.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
+
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions in
+                    parts of Lusaka on 12-14 November
+                  </p>
+                  <h6 class="footerP">Travel Safety and Disruptions</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="card my-4">
+              <div class="card-body">
+                <div class="row myR">
+                  <div class="col-1 col-md-3 p-2">
+                    <img src="https://cdn.countryflags.com/thumbs/zambia/flag-round-500.png" class="rounded-circle"
+                      style="width: 30px" alt="" />
+                  </div>
+                  <div class="col-11 col-md-9">
+                    <div class="row">
+                      <p class="myCardT">Zambia</p>
+                    </div>
+                    <div class="row">
+                      <p class="myCardP col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Eo_circle_green_number-1.svg"
+                          style="width: 15px" alt="" />
+                        Moderate Risk
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="CardB">
+                  <h6>6 hours ago</h6>
+
+                  <p class="card-text myP">
+                    Maintenance work to trigger electricity disruptions
+                  </p>
+                  <h6 class="footerP">Travel Safety</h6>
                 </div>
               </div>
             </div>
@@ -943,12 +726,12 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <!--Bootstrap JS Bundle  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!--Bootstrap JS Bundle  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

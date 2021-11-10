@@ -1,0 +1,10 @@
+@import './Sass/navbar';
+@import './Sass/side-navbar';
+@import './Sass/vars';
+@import './Sass/content';
+
+h5{
+    text-align: center;
+    margin-top: 30px;
+    color: var(--logo);
+}

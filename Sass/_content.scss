@@ -1,19 +1,23 @@
-.content {
-    
-  box-shadow: grey 1px 1px;
-  .card {
-    width: 20%;
-    padding: 10px;
-    margin-bottom: 20px;
-
-    .card-body {
-      p {
-        font-size: 8px !important;
-      }
-    }
-  }
+.myCardT {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.myCardP {
+  font-size: 0.7em;
+  transform: translateY(-19px);
+}
+.footerP {
+  color: rgb(157, 196, 180);
+}
+.myP {
+  font-weight: 300;
+}
+h6 {
+  font-size: 1em;
+  font-weight: 700;
 }
 
-.SSA{
-  border: 1px solid grey;
+// Moderate Risk Positioning
+.myR {
+  transform: translateY(10px);
 }

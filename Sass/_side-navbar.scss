@@ -18,6 +18,9 @@
     }
   }
 }
+
+
+
 .menu {
   h4 {
     color: var(--logo);
@@ -28,7 +31,7 @@
     font-size:.9em;
 
     &:hover{
-     background-color: rgb(61, 168, 168); 
+     background-color: var(--teal); 
      color: white !important;
     }
   }

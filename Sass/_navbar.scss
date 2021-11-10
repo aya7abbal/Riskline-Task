@@ -4,24 +4,24 @@
    background-color: var(--bg);
    height: 60px;
 
+   .offcanvas{
 
+    @media (min-width:576px) {
+        width: 30%;
+        
+    }
+    width: fit-content;
+    background-color:var(--bg) !important;
+    @media (min-width:992px) {
+        
+        display: none;
+    }
+}
     .offcanvas-header{
         height: 15px;
         background-color: var(--bg) !important;
     }
-    .offcanvas{
-
-        @media (min-width:576px) {
-            width: 30%;
-            
-        }
-        width: fit-content;
-        background-color: #f1f1f1 !important;
-        @media (min-width:992px) {
-            
-            display: none;
-        }
-    }
+    
 
     .navbar-light .navbar-brand {
         color: var(--logo) !important;
@@ -57,8 +57,13 @@
     }
 
     a:hover{
-        color:teal;
+        color:var(--teal);
     }
 }
 }
  
+.navbar-light .navbar-brand {
+    color: var(--logo) !important;
+    font-weight: 700;
+
+}
