@@ -9,7 +9,9 @@
 }
 
 .navbar .offcanvas {
-  width: 45%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: #f1f1f1 !important;
 }
 
